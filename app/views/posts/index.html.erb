@@ -1,0 +1,40 @@
+
+<p id="notice"><%= notice %></p>
+
+<div id = "top_bar">
+<h1 id = "logo"> My Blog </h1>
+</div>
+<h2 id = "pagelogo">Posts</h2>
+
+
+<div id = "inner_page">
+
+<div id = "new_posts">
+  <%= link_to 'New Post', new_post_path %>
+</div>
+
+
+<table>
+  <thead>
+  <tr>
+    <th colspan="3"></th>
+  </tr>
+  </thead>
+
+
+  <tbody>
+  <% @posts.each do |post| %>
+
+    <div id = "posts"  >
+      <h2 class="text-xl font-semibold"><%= post.title %> </h2>
+      <div class="m-1 pb-4"><%= post.content %></div>
+      <div><%= link_to 'Show ', post %><%= link_to ' Edit ', edit_post_path(post) %><%= link_to ' Delete', post, method: :delete, data: { confirm: 'Are you sure?' } %></div>
+    </div>
+
+  <% end %>
+  </tbody>
+</table>
+<br>
+</div>
+
+

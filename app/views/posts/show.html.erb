@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+<div id = "top_bar">
+  <h1 id = "logo"> My Blog </h1>
+</div>
+<h2 id = "pagelogo">Post</h2>
+
+<div id = "inner_page">
+<div id = "new_posts">
+
+<%= link_to 'Home', posts_path%> | <%= link_to 'New Post', new_post_path %>
+</div>
+
+
+
+<div id="posts">
+<p>
+  <strong>Title:</strong>
+  <%= @post.title %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @post.content %>
+</p>
+</div>
+  <%= link_to 'Edit Post', edit_post_path(@post) %>
+
+  <h2 style = "text-decoration-line: underline" >Comments</h2>
+
+<div id="posts">
+<%= render @post.comments %>
+</div>
+
+<h2 style = "text-decoration-line: underline">Add a comment:</h2>
+<%= render "comments/form" %>
+
+
+
+
+
+</div>
