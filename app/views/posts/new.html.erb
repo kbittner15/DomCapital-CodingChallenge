@@ -1,13 +1,24 @@
 
 
-<div id = "top_bar">
-  <h1 id = "logo"> My Blog </h1>
-</div>
-<h2 id = "pagelogo">New Post</h2>
+<div id = "background">
 
-<div id = "inner_page">
 
-<%= link_to 'Home', posts_path %>
+  <div id = "top_bar">
+    <h1 id = "logo"> My Blog </h1>
+
+    <div>
+      <h3 id="page-name">new post</h3>
+    </div>
+  </div>
+
+
+  <div id = "inner_page">
+
+    <p id = "linksshow">
+      <%= link_to 'Home', posts_path %>
+    </p>
+
+
 
 
 <%= form_for :post,  url: posts_path do |f| %>
@@ -23,13 +34,13 @@
     </div>
   <% end %>
   <div id="newpost_form">
-  <p>
+  <p style="color: white">
     <%= f.label :title %><br>
     <%= f.text_field :title, :size=>"40x10"%>
   </p>
 
 
-  <p>
+  <p style="color:white">
     <%= f.label :content %><br>
     <%= f.text_area :content, :size=>"100x20"%>
   </p>

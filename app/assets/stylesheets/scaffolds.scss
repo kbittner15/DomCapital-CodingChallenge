@@ -69,20 +69,28 @@ label {
   border-radius: 5px;
   border: 1px solid;
   padding: 5px;
-  box-shadow: 5px 4px 8px #888888;
-}
+  box-shadow: 1px 4px 8px #888888;
+  background-color: white;
 
-#new_posts{
-  padding-bottom: 20px;
+}
+#showposts{
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid;
+  padding: 5px;
+  box-shadow: 1px 4px 8px #888888;
+  background-color: white;
+  margin-right: -12%;
+  margin-left: -12%;
 }
 
  #top_bar{
 
-   background-color: burlywood;
-   padding-top: 5%;
-   padding-bottom: 5%;
+   background-color: #333333;
+   padding-top: 6%;
    text-decoration-line: underline;
    text-align: center;
+   color:white;
 }
 #pagelogo{
   text-decoration-line: underline;
@@ -95,7 +103,7 @@ label {
 
 #newpost_form{
 text-align: center;
-
+  margin-top: 5%;
 }
 
 
@@ -103,5 +111,47 @@ text-align: center;
   margin-top: -1.2%;
   margin-left: 10%;
   margin-right: 10%;
+}
+#background{
+  background-color: #333333;
+}
+#page-name{
+  border-radius: 5px;
   background-color: white;
+  color:black;
+  padding-bottom:1%;
+  padding-top: 1%;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+.new_postbutton{
+  color: white;
+  text-decoration: none;
+
+}
+#fields{
+  color:white;
+  border-radius: 5px;
+  text-decoration-line: underline;
+}
+#links{
+  background-color: white;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 4%;
+  margin-left: 44%;
+  margin-right: 44%;
+
+
+}
+
+#linksshow{
+  background-color: white;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 4%;
+  margin-left: 44%;
+  margin-right: 44%;
+  margin-bottom: 4%;
+
 }
